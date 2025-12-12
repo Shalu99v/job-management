@@ -12,7 +12,7 @@ import { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import axios from 'axios';
 
-export default function EditUserMOdal({ open, onClose, user }: any) {
+export default function EditUserModal({ open, onClose, user }: any) {
     console.log(user,"user in edit modal")
   const [preview, setPreview] = useState(user?.img || '');
   const [roles, setRoles] = useState<{ id: string; title: string }[]>([]);
