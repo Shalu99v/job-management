@@ -3,7 +3,7 @@ import { Pencil, Plus, Search, Trash2 } from 'lucide-react';
 import AddUserModal from '../components/Modals/AddUserModal';
 import DeleteConfirmModal from '../components/Modals/DeleteConfirmModal';
 import toast from 'react-hot-toast';
-import EditUserModal from "../components/Modals/EditUserMOdal";
+import EditUserMOdal from '../components/Modals/EditUserMOdal';
 
 interface User {
   id: string;
@@ -325,7 +325,7 @@ export default function Users() {
 
       {/* MODALS */}
       <AddUserModal open={addOpen} onClose={() => setAddOpen(false)} />
-      <EditUserModal open={editOpen} onClose={() => setEditOpen(false)} user={selectedUser} />
+      <EditUserMOdal open={editOpen} onClose={() => setEditOpen(false)} user={selectedUser} />
 
       <DeleteConfirmModal
         open={deleteModalOpen}
